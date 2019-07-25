@@ -25,4 +25,12 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+// 在app启动时注册appId
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // 注册AppId;
+    [DTOpenAPI registerApp:#该应用的appId#];
+    return YES;
+}
+
 @end
