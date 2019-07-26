@@ -1,7 +1,7 @@
 /********* cordova-plugin-dingTalk.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
-#import <DTShareKit/DTOpenKit.h>
+#import DTOpenKit.h
 
 @interface cordova_plugin_dingTalk : CDVPlugin
 - (void)openDingTalk;

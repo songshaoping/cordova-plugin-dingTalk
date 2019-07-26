@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <DTShareKit/DTOpenKit.h>
+#import DTOpenKit.h
 
 @interface AppDelegate () <DTOpenAPIDelegate>
 @end

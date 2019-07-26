@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-plugin-dingTalk</name>
     <js-module name="cordova-plugin-dingTalk" src="www/cordova-plugin-dingTalk.js">
-        <clobbers target="cordova.plugins.cordova-plugin-dingTalk"/>
+        <clobbers target="CordovaPluginDingTalk"/>
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
@@ -23,10 +23,10 @@
             </feature>
         </config-file>
 
-        <header-file src="src/ios/AppDelegate.h" />
+        <header-file src="src/ios/DTOpenAPI.h" />
+        <header-file src="src/ios/DTOpenAPIObject.h" />
+        <header-file src="src/ios/DTOpenKit.h" />
         <source-file src="src/ios/AppDelegate.m"/>
         <source-file src="src/ios/cordova-plugin-dingTalk.m"/>
-
-        <framework src="DTShareKit.framework" />
     </platform>
 </plugin>
